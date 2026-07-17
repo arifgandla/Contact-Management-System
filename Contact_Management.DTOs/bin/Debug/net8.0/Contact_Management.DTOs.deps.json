@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Contact_Management.DTOs/1.0.0": {
+        "runtime": {
+          "Contact_Management.DTOs.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Contact_Management.DTOs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

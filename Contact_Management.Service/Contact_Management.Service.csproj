@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="7.0.3" />
+    <PackageReference Include="ServiceStack" Version="10.0.8" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Contact_Management.Data\Contact_Management.Data.csproj" />
+    <ProjectReference Include="..\Contact_Management.DTOs\Contact_Management.DTOs.csproj" />
+    <ProjectReference Include="..\Contact_Management.Model\Contact_Management.Model.csproj" />
+    <ProjectReference Include="..\Contact_Management.Repository\Contact_Management.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

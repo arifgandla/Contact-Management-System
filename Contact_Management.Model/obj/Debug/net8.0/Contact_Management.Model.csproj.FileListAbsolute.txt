@@ -1,0 +1,12 @@
+C:\Users\Arif\source\repos\Contact_Management.Model\bin\Debug\net8.0\Contact_Management.Model.deps.json
+C:\Users\Arif\source\repos\Contact_Management.Model\bin\Debug\net8.0\Contact_Management.Model.dll
+C:\Users\Arif\source\repos\Contact_Management.Model\bin\Debug\net8.0\Contact_Management.Model.pdb
+C:\Users\Arif\source\repos\Contact_Management.Model\obj\Debug\net8.0\Contact_Management.Model.csproj.AssemblyReference.cache
+C:\Users\Arif\source\repos\Contact_Management.Model\obj\Debug\net8.0\Contact_Management.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Arif\source\repos\Contact_Management.Model\obj\Debug\net8.0\Contact_Management.Model.AssemblyInfoInputs.cache
+C:\Users\Arif\source\repos\Contact_Management.Model\obj\Debug\net8.0\Contact_Management.Model.AssemblyInfo.cs
+C:\Users\Arif\source\repos\Contact_Management.Model\obj\Debug\net8.0\Contact_Management.Model.csproj.CoreCompileInputs.cache
+C:\Users\Arif\source\repos\Contact_Management.Model\obj\Debug\net8.0\Contact_Management.Model.dll
+C:\Users\Arif\source\repos\Contact_Management.Model\obj\Debug\net8.0\refint\Contact_Management.Model.dll
+C:\Users\Arif\source\repos\Contact_Management.Model\obj\Debug\net8.0\Contact_Management.Model.pdb
+C:\Users\Arif\source\repos\Contact_Management.Model\obj\Debug\net8.0\ref\Contact_Management.Model.dll

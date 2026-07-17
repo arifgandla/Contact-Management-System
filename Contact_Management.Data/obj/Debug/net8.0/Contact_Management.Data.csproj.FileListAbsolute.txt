@@ -1,0 +1,15 @@
+C:\Users\Arif\source\repos\Contact_Management.Data\bin\Debug\net8.0\Contact_Management.Data.deps.json
+C:\Users\Arif\source\repos\Contact_Management.Data\bin\Debug\net8.0\Contact_Management.Data.dll
+C:\Users\Arif\source\repos\Contact_Management.Data\bin\Debug\net8.0\Contact_Management.Data.pdb
+C:\Users\Arif\source\repos\Contact_Management.Data\bin\Debug\net8.0\Contact_Management.Model.dll
+C:\Users\Arif\source\repos\Contact_Management.Data\bin\Debug\net8.0\Contact_Management.Model.pdb
+C:\Users\Arif\source\repos\Contact_Management.Data\obj\Debug\net8.0\Contact_Management.Data.csproj.AssemblyReference.cache
+C:\Users\Arif\source\repos\Contact_Management.Data\obj\Debug\net8.0\Contact_Management.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Arif\source\repos\Contact_Management.Data\obj\Debug\net8.0\Contact_Management.Data.AssemblyInfoInputs.cache
+C:\Users\Arif\source\repos\Contact_Management.Data\obj\Debug\net8.0\Contact_Management.Data.AssemblyInfo.cs
+C:\Users\Arif\source\repos\Contact_Management.Data\obj\Debug\net8.0\Contact_Management.Data.csproj.CoreCompileInputs.cache
+C:\Users\Arif\source\repos\Contact_Management.Data\obj\Debug\net8.0\Contact_.86BD8F08.Up2Date
+C:\Users\Arif\source\repos\Contact_Management.Data\obj\Debug\net8.0\Contact_Management.Data.dll
+C:\Users\Arif\source\repos\Contact_Management.Data\obj\Debug\net8.0\refint\Contact_Management.Data.dll
+C:\Users\Arif\source\repos\Contact_Management.Data\obj\Debug\net8.0\Contact_Management.Data.pdb
+C:\Users\Arif\source\repos\Contact_Management.Data\obj\Debug\net8.0\ref\Contact_Management.Data.dll
