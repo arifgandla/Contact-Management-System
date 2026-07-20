@@ -1,12 +1,11 @@
-﻿using Contact_Management.DTOS;
-using Contact_Management.Models;
+﻿using Contact_Management.DTOs;
+using Contact_Management.DTOS;
 
-namespace Contact_Management.Service
+namespace Contact_Management.Service;
+
+public interface IAuthService
 {
-    public interface IAuthService
-    {
-        Task<bool> RegisterAsync(RegisterDTO dto);
+    Task<AuthResponseDTO> RegisterAsync(RegisterDTO dto);
 
-        Task<(string Token, ApplicationUser User)?> LoginAsync(LoginDTO dto);
-    }
+    Task<AuthResponseDTO> LoginAsync(LoginDTO dto);
 }

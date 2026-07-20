@@ -17,3 +17,4 @@ C:\Users\Arif\source\repos\Contact_Management.Repository\obj\Debug\net8.0\Contac
 C:\Users\Arif\source\repos\Contact_Management.Repository\obj\Debug\net8.0\refint\Contact_Management.Repository.dll
 C:\Users\Arif\source\repos\Contact_Management.Repository\obj\Debug\net8.0\Contact_Management.Repository.pdb
 C:\Users\Arif\source\repos\Contact_Management.Repository\obj\Debug\net8.0\ref\Contact_Management.Repository.dll
+C:\Users\Arif\source\repos\Contact_Management.Repository\obj\Debug\net8.0\Contact_Management.Repository.sourcelink.json

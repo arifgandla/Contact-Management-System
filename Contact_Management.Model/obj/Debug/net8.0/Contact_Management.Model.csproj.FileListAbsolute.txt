@@ -10,3 +10,4 @@ C:\Users\Arif\source\repos\Contact_Management.Model\obj\Debug\net8.0\Contact_Man
 C:\Users\Arif\source\repos\Contact_Management.Model\obj\Debug\net8.0\refint\Contact_Management.Model.dll
 C:\Users\Arif\source\repos\Contact_Management.Model\obj\Debug\net8.0\Contact_Management.Model.pdb
 C:\Users\Arif\source\repos\Contact_Management.Model\obj\Debug\net8.0\ref\Contact_Management.Model.dll
+C:\Users\Arif\source\repos\Contact_Management.Model\obj\Debug\net8.0\Contact_Management.Model.sourcelink.json

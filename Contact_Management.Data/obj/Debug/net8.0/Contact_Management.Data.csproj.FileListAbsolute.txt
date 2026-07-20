@@ -13,3 +13,4 @@ C:\Users\Arif\source\repos\Contact_Management.Data\obj\Debug\net8.0\Contact_Mana
 C:\Users\Arif\source\repos\Contact_Management.Data\obj\Debug\net8.0\refint\Contact_Management.Data.dll
 C:\Users\Arif\source\repos\Contact_Management.Data\obj\Debug\net8.0\Contact_Management.Data.pdb
 C:\Users\Arif\source\repos\Contact_Management.Data\obj\Debug\net8.0\ref\Contact_Management.Data.dll
+C:\Users\Arif\source\repos\Contact_Management.Data\obj\Debug\net8.0\Contact_Management.Data.sourcelink.json

@@ -1,37 +1,70 @@
-﻿using Contact_Management.DTOS;
-using Contact_Management.Models;
+﻿using Contact_Management.DTOs;
+using Contact_Management.DTOS;
 using Contact_Management.Repository;
 
-namespace Contact_Management.Service
+namespace Contact_Management.Service;
+
+public class AuthService : IAuthService
 {
-    public class AuthService : IAuthService
+    private readonly IAuthRepository _authRepository;
+    private readonly IJwtService _jwtService;
+
+    public AuthService(
+        IAuthRepository authRepository,
+        IJwtService jwtService)
     {
-        private readonly IAuthRepository _authRepository;
-        private readonly IJwtService _jwtService;
+        _authRepository = authRepository;
+        _jwtService = jwtService;
+    }
 
-        public AuthService(
-            IAuthRepository authRepository,
-            IJwtService jwtService)
+    public async Task<AuthResponseDTO> RegisterAsync(RegisterDTO dto)
+    {
+        var result = await _authRepository.RegisterAsync(dto);
+
+        if (!result)
         {
-            _authRepository = authRepository;
-            _jwtService = jwtService;
+            return new AuthResponseDTO
+            {
+                Success = false,
+                Message = "User already exists or registration failed."
+            };
         }
 
-        public async Task<bool> RegisterAsync(RegisterDTO dto)
+        return new AuthResponseDTO
         {
-            return await _authRepository.RegisterAsync(dto);
+            Success = true,
+            Message = "User registered successfully."
+        };
+    }
+
+    public async Task<AuthResponseDTO> LoginAsync(LoginDTO dto)
+    {
+        var user = await _authRepository.LoginAsync(dto);
+
+        if (user == null)
+        {
+            return new AuthResponseDTO
+            {
+                Success = false,
+                Message = "Invalid Email or Password."
+            };
         }
 
-        public async Task<(string Token, ApplicationUser User)?> LoginAsync(LoginDTO dto)
+        var token = _jwtService.GenerateToken(user);
+
+        return new AuthResponseDTO
         {
-            var user = await _authRepository.LoginAsync(dto);
-
-            if (user == null)
-                return null;
-
-            var token = _jwtService.GenerateToken(user);
-
-            return (token, user);
-        }
+            Success = true,
+            Message = "Login Successful",
+            Token = token,
+            User = new
+            {
+                user.Id,
+                user.FirstName,
+                user.LastName,
+                user.Email,
+                user.PhoneNumber
+            }
+        };
     }
 }
