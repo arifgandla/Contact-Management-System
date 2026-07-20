@@ -8,9 +8,9 @@ public interface IContactRepository
 
     Task<Contact?> GetByIdAsync(int id, string userId);
 
-    Task<Contact> CreateAsync(Contact contact);
+    Task AddAsync(Contact contact);
 
-    Task<Contact?> UpdateAsync(int id, Contact contact, string userId);
+    void Delete(Contact contact);
 
-    Task<bool> DeleteAsync(int id, string userId);
+    Task SaveChangesAsync();
 }

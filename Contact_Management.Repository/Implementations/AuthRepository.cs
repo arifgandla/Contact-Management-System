@@ -36,6 +36,7 @@ namespace Contact_Management.Repository
             return await _userManager.CheckPasswordAsync(user, password);
         }
 
+
         public async Task AddContactAsync(Contact contact)
         {
             await _context.Contacts.AddAsync(contact);
@@ -43,7 +44,9 @@ namespace Contact_Management.Repository
 
         public async Task SaveChangesAsync()
         {
+
             await _context.SaveChangesAsync();
+
         }
     }
 }
