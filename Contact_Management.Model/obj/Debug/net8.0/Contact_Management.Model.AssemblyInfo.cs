@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Contact_Management.Model")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73c7b38eeab4e086e5f12445970357b76a828277")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+650ab793d80e619fcbd5a5323eeb6bebc9d34d04")]
 [assembly: System.Reflection.AssemblyProductAttribute("Contact_Management.Model")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Contact_Management.Model")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

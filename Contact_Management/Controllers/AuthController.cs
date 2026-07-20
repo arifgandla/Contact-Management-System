@@ -2,46 +2,39 @@
 using Contact_Management.Service;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Contact_Management.API.Controllers;
-
-[ApiController]
-[Route("api/[controller]")]
-public class AuthController : ControllerBase
+namespace Contact_Management.Controllers
 {
-    private readonly IAuthService _authService;
-
-
-
-    public AuthController(IAuthService authService)
+    [ApiController]
+    [Route("api/[controller]")]
+    public class AuthController : ControllerBase
     {
-        _authService = authService;
-    }
+        private readonly IAuthService _service;
 
-    [HttpPost("register")]
-    public async Task<IActionResult> Register(RegisterDTO dto)
-    {
-        if (!ModelState.IsValid)
-            return BadRequest(ModelState);
+        public AuthController(IAuthService service)
+        {
+            _service = service;
+        }
 
-        var result = await _authService.RegisterAsync(dto);
+        [HttpPost("register")]
+        public async Task<IActionResult> Register(RegisterDTO dto)
+        {
+            var result = await _service.RegisterAsync(dto);
 
-        if (!result.Success)
-            return BadRequest(result);
+            if (!result.Success)
+                return BadRequest(result);
 
-        return Ok(result);
-    }
+            return Ok(result);
+        }
 
-    [HttpPost("login")]
-    public async Task<IActionResult> Login(LoginDTO dto)
-    {
-        if (!ModelState.IsValid)
-            return BadRequest(ModelState);
+        [HttpPost("login")]
+        public async Task<IActionResult> Login(LoginDTO dto)
+        {
+            var result = await _service.LoginAsync(dto);
 
-        var result = await _authService.LoginAsync(dto);
+            if (!result.Success)
+                return Unauthorized(result);
 
-        if (!result.Success)
-            return Unauthorized(result);
-
-        return Ok(result);
+            return Ok(result);
+        }
     }
 }
