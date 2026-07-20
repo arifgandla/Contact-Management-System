@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="../Contact_Management.Data/Contact_Management.Data.csproj" Id="975396be-636d-4e68-b562-793483f560d6" />
+  <Project Path="../Contact_Management.DTOs/Contact_Management.DTOs.csproj" Id="0c02800d-78bb-4383-b6f2-854677685d5f" />
+  <Project Path="../Contact_Management.Model/Contact_Management.Model.csproj" Id="647c4389-8a0d-46a3-914a-7d0bdc4c9328" />
+  <Project Path="../Contact_Management.Repository/Contact_Management.Repository.csproj" Id="33f408dc-f78e-410d-a940-019c063c32da" />
+  <Project Path="../Contact_Management.Service/Contact_Management.Service.csproj" Id="f533a21f-75ab-4d72-9c96-04e258bb487a" />
+  <Project Path="Contact_Management.API.csproj" />
+</Solution>
