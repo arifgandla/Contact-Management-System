@@ -20,8 +20,7 @@ namespace Contact_Management.Service
 
         public async Task<AuthResponseDTO> RegisterAsync(RegisterDTO dto)
         {
-            var existingUser =
-                await _repository.GetUserByEmailAsync(dto.Email);
+            var existingUser = await _repository.GetUserByEmailAsync(dto.Email);
 
             if (existingUser != null)
             {
@@ -41,30 +40,16 @@ namespace Contact_Management.Service
                 PhoneNumber = dto.Phone
             };
 
-            var result =
-                await _repository.CreateUserAsync(user, dto.Password);
+            var result = await _repository.CreateUserAsync(user, dto.Password);
 
             if (!result.Succeeded)
             {
                 return new AuthResponseDTO
                 {
                     Success = false,
-                    Message = string.Join(", ",
-                        result.Errors.Select(x => x.Description))
+                    Message = string.Join(", ", result.Errors.Select(x => x.Description))
                 };
             }
-
-            var contact = new Contact
-            {
-                Name = $"{dto.FirstName} {dto.LastName}",
-                Email = dto.Email,
-                Phone = dto.Phone,
-                UserId = user.Id
-            };
-
-            await _repository.AddContactAsync(contact);
-
-            await _repository.SaveChangesAsync();
 
             return new AuthResponseDTO
             {
