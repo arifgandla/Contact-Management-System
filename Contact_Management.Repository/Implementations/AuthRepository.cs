@@ -1,5 +1,4 @@
 ﻿using Contact_Management.Data;
-using Contact_Management.DTOS;
 using Contact_Management.Models;
 using Microsoft.AspNetCore.Identity;
 
@@ -18,54 +17,33 @@ namespace Contact_Management.Repository
             _context = context;
         }
 
-        public async Task<bool> RegisterAsync(RegisterDTO dto)
+        public async Task<ApplicationUser?> GetUserByEmailAsync(string email)
         {
-            var existingUser = await _userManager.FindByEmailAsync(dto.Email);
-
-            if (existingUser != null)
-                return false;
-
-            var user = new ApplicationUser
-            {
-                UserName = dto.Email,
-                Email = dto.Email,
-                FirstName = dto.FirstName,
-                LastName = dto.LastName,
-                PhoneNumber = dto.Phone
-            };
-
-            var result = await _userManager.CreateAsync(user, dto.Password);
-
-            if (!result.Succeeded)
-                return false;
-
-            var contact = new Contact
-            {
-                Name = $"{dto.FirstName} {dto.LastName}",
-                Email = dto.Email,
-                Phone = dto.Phone,
-                UserId = user.Id
-            };
-
-            _context.Contacts.Add(contact);
-            await _context.SaveChangesAsync();
-
-            return true;
+            return await _userManager.FindByEmailAsync(email);
         }
 
-        public async Task<ApplicationUser?> LoginAsync(LoginDTO dto)
+        public async Task<IdentityResult> CreateUserAsync(
+            ApplicationUser user,
+            string password)
         {
-            var user = await _userManager.FindByEmailAsync(dto.Email);
+            return await _userManager.CreateAsync(user, password);
+        }
 
-            if (user == null)
-                return null;
+        public async Task<bool> CheckPasswordAsync(
+            ApplicationUser user,
+            string password)
+        {
+            return await _userManager.CheckPasswordAsync(user, password);
+        }
 
-            var validPassword = await _userManager.CheckPasswordAsync(user, dto.Password);
+        public async Task AddContactAsync(Contact contact)
+        {
+            await _context.Contacts.AddAsync(contact);
+        }
 
-            if (!validPassword)
-                return null;
-
-            return user;
+        public async Task SaveChangesAsync()
+        {
+            await _context.SaveChangesAsync();
         }
     }
 }
