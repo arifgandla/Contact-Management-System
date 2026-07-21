@@ -11,8 +11,6 @@ namespace Contact_Management.Repository
 
         Task<bool> CheckPasswordAsync(ApplicationUser user, string password);
 
-        Task AddContactAsync(Contact contact);
-
         Task SaveChangesAsync();
     }
 }
