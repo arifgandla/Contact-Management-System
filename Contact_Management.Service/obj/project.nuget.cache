@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "po418Sl4Lvk=",
+  "dgSpecHash": "l2rVLTpIEzo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Arif\\OneDrive\\Documents\\GitHub\\Contact-Management-System\\Contact_Management.Service\\Contact_Management.Service.csproj",
+  "projectFilePath": "C:\\Users\\Arif\\OneDrive\\Desktop\\Contact-Management-System\\Contact_Management.Service\\Contact_Management.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Arif\\.nuget\\packages\\automapper\\8.0.0\\automapper.8.0.0.nupkg.sha512",
     "C:\\Users\\Arif\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.0\\microsoft.aspnetcore.cryptography.internal.8.0.0.nupkg.sha512",
@@ -56,9 +56,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "Package 'AutoMapper' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
-      "projectPath": "C:\\Users\\Arif\\OneDrive\\Documents\\GitHub\\Contact-Management-System\\Contact_Management.Service\\Contact_Management.Service.csproj",
+      "projectPath": "C:\\Users\\Arif\\OneDrive\\Desktop\\Contact-Management-System\\Contact_Management.Service\\Contact_Management.Service.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Arif\\OneDrive\\Documents\\GitHub\\Contact-Management-System\\Contact_Management.Service\\Contact_Management.Service.csproj",
+      "filePath": "C:\\Users\\Arif\\OneDrive\\Desktop\\Contact-Management-System\\Contact_Management.Service\\Contact_Management.Service.csproj",
       "libraryId": "AutoMapper",
       "targetGraphs": [
         "net8.0"
@@ -68,9 +68,9 @@
       "code": "NU1902",
       "level": "Warning",
       "message": "Package 'System.IdentityModel.Tokens.Jwt' 7.0.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-59j7-ghrg-fj52",
-      "projectPath": "C:\\Users\\Arif\\OneDrive\\Documents\\GitHub\\Contact-Management-System\\Contact_Management.Service\\Contact_Management.Service.csproj",
+      "projectPath": "C:\\Users\\Arif\\OneDrive\\Desktop\\Contact-Management-System\\Contact_Management.Service\\Contact_Management.Service.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Arif\\OneDrive\\Documents\\GitHub\\Contact-Management-System\\Contact_Management.Service\\Contact_Management.Service.csproj",
+      "filePath": "C:\\Users\\Arif\\OneDrive\\Desktop\\Contact-Management-System\\Contact_Management.Service\\Contact_Management.Service.csproj",
       "libraryId": "System.IdentityModel.Tokens.Jwt",
       "targetGraphs": [
         "net8.0"
